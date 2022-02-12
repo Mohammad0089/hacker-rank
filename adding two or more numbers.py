@@ -1,5 +1,5 @@
 
-print("Enter two or more numbers to calculate press any non digit value or Enter to quit.")
+print("Enter two or more positive numbers to calculate then press any non digit value or Enter to quit.")
 
 numbers = list() # a list to hold the numbers
 
