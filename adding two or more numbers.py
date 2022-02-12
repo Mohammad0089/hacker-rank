@@ -13,13 +13,13 @@ while num.isdigit():     # getting numbers from user
     def a decorator to check  the range'''
 
 def checkRange(func): 
-    def checker(args):              # checker gets a list 
-        for val in args:
+    def checker(listA):              # checker gets a list 
+        for val in listA:
             if val > 1000:
                 raise ValueError("Value over 1000 is not allowed")
             elif val < 1:
                 raise ValueError('value less than 1 is not allowed')
-        return func(args)
+        return func(listA)
     return checker
 
 @checkRange
