@@ -4,7 +4,7 @@ print("Enter two or more numbers to calculate press any non digit value or Enter
 numbers = list() # a list to hold the numbers
 
 num = input()
-while num.isdigit():     # getting numbers from user  
+while num.isdigit():     # getting numbers from user  # isdigit() returns false for numbers < 0
         numbers.append(int(num))    #adding the number to our list
         num = input()
 
